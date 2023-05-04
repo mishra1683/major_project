@@ -11,7 +11,8 @@ st.title("Stress Checker")
 st.write("Let's firstly see your face!!")
 
 
-p=v.func()
+# p=v.func()
+p=[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 if len(p)/50 > 0.3:
     st.write("It's looks like you are in stress. For further clarification we would like to do another check up")
     loaded_model = pickle.load(open(r"module_2.sav", 'rb'))
