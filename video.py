@@ -54,6 +54,6 @@ def func():
                 label_position = (x, y)
                 cv2.putText(gray, label, label_position,
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-        frame = cv2.cvtColor(gray, cv2.COLOR_BGR2RGB)
-        FRAME_WINDOW.image(frame)
+#         frame = cv2.cvtColor(gray, cv2.COLOR_BGR2RGB)
+        FRAME_WINDOW.image(gray)
     return p
