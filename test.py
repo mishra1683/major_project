@@ -14,7 +14,7 @@ st.write("Let's firstly see your face!!")
 p=v.func()
 if len(p)/50 > 0.3:
     st.write("It's looks like you are in stress. For further clarification we would like to do another check up")
-    loaded_model = pickle.load(open(r"tests\model\module_2.sav", 'rb'))
+    loaded_model = pickle.load(open(r"module_2.sav", 'rb'))
     with st.form(key='form1'):
         a=st.number_input("Age")
         b=st.number_input("Gender")
