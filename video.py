@@ -13,7 +13,7 @@ def func():
     # Face Classifier
     face_classifier = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
     # Loading the model
-    classifier = load_model(r'tests\model\major_project.h5',compile=False)
+    classifier = load_model(r'major_project.h5',compile=False)
     classifier.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy']) 
 
     # Different types of emotions
