@@ -36,7 +36,7 @@ def func():
 
         # adding rectangle box outside faces
         for (x, y, w, h) in faces:
-            cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 255), 2)
+            cv2.rectangle(gray, (x, y), (x + w, y + h), (0, 255, 255), 2)
             roi_gray = gray[y:y + h, x:x + w]
             roi_gray = cv2.resize(roi_gray, (48, 48), interpolation=cv2.INTER_AREA)
 
@@ -52,8 +52,8 @@ def func():
                 if label=='Stress':
                     p.append('S')
                 label_position = (x, y)
-                cv2.putText(frame, label, label_position,
+                cv2.putText(gray, label, label_position,
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        frame = cv2.cvtColor(gray, cv2.COLOR_BGR2RGB)
         FRAME_WINDOW.image(frame)
     return p
