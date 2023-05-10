@@ -1,2 +1,2 @@
 ---
-title: Major Project
+Major Project
